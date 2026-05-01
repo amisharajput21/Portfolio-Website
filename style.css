@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.box1{
+    width: 100%;
+    height: 2rem;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0f172a;
+    color: white;
+    border: none;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.box1 h2{
+    margin: 0;
+    padding-right: 35%;
+}
+button{
+    border-radius: 20px;
+    width: 10%;
+    height: 2rem;
+    background-color: rgb(113, 165, 195);
+    color: white;
+    cursor:pointer;
+    transition:0.3s;
+    border: none;
+}
+button:hover{
+background:#2563eb;
+transform:scale(1.1);
+}
+
+.hero-box{
+    border: 2px solid black;
+    width: 100%;
+    background: #0f172a;
+    color: white;
+    padding-top: 2em;
+    padding-left: 1em;
+    border: none;
+}
+.hero-btn{
+    margin-top: 1em;
+}
+.btn{
+    margin: 1em 1em 1em 0em;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f172a;
+}
+.hero-img{
+    height: 12em;
+    width: 12em;
+    border-radius: 50%;
+    margin-right: 10em;
+    margin-top: 2em;
+}
+
+
+.About-me{
+    border: 2px solid black;
+    width: 100%;
+    height: auto;
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    border: none;
+}
+.about-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.about-box {
+  background: #111827;
+  padding: 20px;
+  width: 220px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  color: white;
+}
+
+
+.skills{
+    border: 2px solid black;
+    background: #0f172a;
+    color: white;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 2rem;
+    border: none;
+}
+.skills-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+.skills-box{
+    height: 8rem;
+    width: 10rem;
+    border: 2px solid black;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(7rem); 
+    margin-right: 2rem;
+    border-radius: 2rem;
+    border: none;
+    transition:0.3s;
+}
+
+.skills-box:hover{
+transform:translateY(-10px);
+background:#1e293b;
+}
+.skills img{
+    height: 5rem;
+    width: 4rem;
+    padding-top: 1rem;
+}
+.skills p{
+    font-size: 1rem;
+    color: white;
+}
+
+
+.projects{
+    height: auto;
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid black;
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    border: none;
+}
+.project-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+.project-box{
+    height: 15rem;
+    width: 30rem;
+    border: 2px solid black;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(7rem); 
+    margin-right: 2rem;
+    border-radius: 2rem;
+    border: none;
+    transition:0.3s;
+}
+.project-box:hover{
+transform:scale(1.05);
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+.project-box img{
+    height: 8rem;
+    width: 100%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+.project-box h3{
+    margin: 0;
+}
+.project-box p{
+    font-size: 1rem;
+    color: white;
+}
+.buttons a{
+    border-radius: 1rem;
+    background-color: blue;
+    color: white;
+    display: inline-block;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    font-size: 10;
+    margin-top: 1rem;
+}
+.contact{
+    background-color: #0f172a;
+    text-align: center;
+    color: white;
+    padding: 4rem;
+}
+.contact-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.contact-container input{
+    width: 20rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+    padding: 1rem;
+}
+.contact-container textarea{
+    width: 20rem;
+    height: auto;
+    border-radius: 10px;
+    border: none;
+    padding: 0.5rem;
+}
+
+@media(max-width:768px){
+
+.hero-box{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-img{
+margin-top:20px;
+}
+
+.project-container{
+flex-direction:column;
+gap:20px;
+}
+
+.skills-container{
+flex-wrap:wrap;
+}
+
+.box1{
+flex-direction:column;
+height:auto;
+padding:10px;
+}
+}
