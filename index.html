@@ -1,128 +1,688 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="theme-color" content="#080b16">
+
+    <title>Amisha Rajput | Java Developer</title>
+
+    <meta
+        name="description"
+        content="Amisha Rajput's developer portfolio showcasing Java, web development skills, projects, and coding profiles."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <section>
-        <div class="box1">
-            <h2>MyPortfolio</h2>
-            <h4>Home</h4>
-            <h4>About Me</h4>
-            <h4>Skills</h4>
-            <h4>Projects</h4>
-            <h4>Contact</h4>
-            <button>Download</button>
-        </div>
-    </section>
-    <section class="hero">
-        <div class="hero-box">
-            <h1>Hi'Im Amisha</h1>
-            <h3>WebDeveloper</h3>
-            <h5>I love building websites and turning ideas into reality</h5>
-            <div class="hero-btn">
-                <a href="https://leetcode.com/u/Amisha_Rajput/" target="_blank">
-                    <button style="background-color: black;">Leetcode</button>
-                </a>
-                <a href="https://www.linkedin.com/in/amisha-rajput-b52b20301/" target="_blank"><button>Linkdin</button></a>
-                <a href="https://github.com/amisharajput21" target="_blank"><button>Github</button></a>
-            </div>
-            <!-- <button class="btn">View My work</buttton> -->
-        </div>
-        <div>
-            <img class="hero-img" src="img.jpg">
-        </div>
-    </section>
-    <section class="About-me">
-        <h2>About Me</h2>
-            <div class="about-container">
-                <div class="about-box">
-                <h3>Frontend Developer</h3>
-                <p>I build responsive and user-friendly websites.</p>
-            </div>
-            <div class="about-box">
-                <h3>1+ Years Experience</h3>
-                <p>Worked on multiple real-world projects.</p>
-            </div>
-            <div class="about-box">
-                <h3> 5+ Projects Done</h3>
-                <p>Created portfolio, apps and UI designs.</p>
-            </div>
-            <div class="about-box">
-                <h3>Problem Solver</h3>
-                <p>Solve 200+ Questions on Leetcode</p>
-            </div>
-        </div>
-    </section>
-    <div class="skills">
-        <h2>My Skills</h2>
-        <div class="skills-container">
-            <div class="skills-box">
-                <img class="logo" src="img1.png">
-                <p>HTML</p>
-            </div>
-            <div class="skills-box">
-                <img class="logo" src="img2.png">
-                <p>CSS</p>
-            </div>
-            <div class="skills-box">
-                <img class="logo" src="img3.png">
-                <p>JavaScript</p>
-            </div>
-            <div class="skills-box">
-                <img class="logo" src="img4.png">
-                <p>Java</p>
-            </div>
-            <div class="skills-box">
-                <img class="logo" src="img5.png">
-                <p>DSA</p>
-            </div>
-        </div>
-    </div>
 
-    <section class="projects">
-        <h2>My Projects</h2>
-        <div class="project-container">
-            <div class="project-box">
-                <img src="project1.png">
-                <h3>Amazon Clone</h3>
-                <p>Html & Css</p>
-                <div class="buttons">
-                    <a href="https://app.netlify.com/projects/amazonclone-amisha/overview">Live</a>
-                    <a href="https://github.com/amisharajput21/amazon-clone-.git">Code</a>
+<body>
+
+    <div class="page-glow glow-one"></div>
+    <div class="page-glow glow-two"></div>
+
+    <!-- NAVBAR -->
+    <header class="site-header" id="top">
+        <nav class="navbar container" aria-label="Main navigation">
+
+            <a href="#home" class="brand">
+                <span class="brand-mark">A<span>.</span></span>
+                <span class="brand-name">amisha<span>rajput</span></span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="nav-menu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a class="nav-link active" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#skills">Skills</a></li>
+                <li><a class="nav-link" href="#projects">Projects</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+                <li>
+                    <a class="nav-cta" href="#contact">
+                        Let's Connect <span>↗</span>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero section" id="home">
+            <div class="container hero-grid">
+
+                <div class="hero-content reveal">
+                    <div class="availability">
+                        <span class="availability-dot"></span>
+                        <span>Computer Science Engineering Student</span>
+                    </div>
+
+                    <p class="eyebrow">HELLO, I'M</p>
+
+                    <h1>
+                        Amisha
+                        <span class="gradient-text">Rajput.</span>
+                    </h1>
+
+                    <h2 class="hero-role">
+                        Aspiring <span>Java Developer</span>
+                    </h2>
+
+                    <p class="hero-description">
+                        I enjoy solving problems, learning new technologies,
+                        and building practical web applications. I'm focused
+                        on strengthening my Java and software development skills.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="button button-primary">
+                            Explore My Work <span>↗</span>
+                        </a>
+
+                        <a href="#contact" class="button button-secondary">
+                            Get In Touch
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <a
+                            href="https://github.com/amisharajput21"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub profile"
+                        >GitHub <span>↗</span></a>
+
+                        <a
+                            href="https://www.linkedin.com/in/amisha-rajput-b52b20301/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn profile"
+                        >LinkDin <span>↗</span></a>
+
+                        <a
+                            href="https://leetcode.com/u/Amisha_Rajput/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LeetCode profile"
+                        >LeetCode <span>↗</span></a>
+                    </div>
                 </div>
-            </div>
-            <div class="project-box">
-                <img src="project2.png">
-                <h3>Tic-Tac-Toe Game</h3>
-                <p>JavaScript</p>
-                <div class="buttons">
-                    <a href="#">Live</a>
-                    <a href="https://github.com/amisharajput21/Tic-Tac-Toe.git">Code</a>
+
+                <!-- Developer-style visual, no profile photo -->
+                <div class="hero-visual reveal">
+                    <div class="visual-orbit orbit-one"></div>
+                    <div class="visual-orbit orbit-two"></div>
+
+                    <div class="code-card">
+                        <div class="code-card-header">
+                            <div class="window-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <span class="code-filename">Developer.java</span>
+                            <span class="code-menu">•••</span>
+                        </div>
+
+                        <div class="code-body">
+                            <div class="code-line">
+                                <span class="line-number">01</span>
+                                <span><span class="code-purple">public class</span> <span class="code-blue">Developer</span> {</span>
+                            </div>
+
+                            <div class="code-line">
+                                <span class="line-number">02</span>
+                                <span class="indent"><span class="code-purple">private</span> String name =</span>
+                            </div>
+
+                            <div class="code-line">
+                                <span class="line-number">03</span>
+                                <span class="indent-two"><span class="code-green">"Amisha Rajput"</span>;</span>
+                            </div>
+
+                            <div class="code-line blank-line">
+                                <span class="line-number">04</span>
+                                <span></span>
+                            </div>
+
+                            <div class="code-line">
+                                <span class="line-number">05</span>
+                                <span class="indent"><span class="code-purple">private</span> String focus =</span>
+                            </div>
+
+                            <div class="code-line">
+                                <span class="line-number">06</span>
+                                <span class="indent-two"><span class="code-green">"Java & Development"</span>;</span>
+                            </div>
+
+                            <div class="code-line blank-line">
+                                <span class="line-number">07</span>
+                                <span></span>
+                            </div>
+
+                            <div class="code-line">
+                                <span class="line-number">08</span>
+                                <span class="indent"><span class="code-purple">public void</span> <span class="code-blue">keepLearning</span>() {</span>
+                            </div>
+
+                            <div class="code-line">
+                                <span class="line-number">09</span>
+                                <span class="indent-two">buildProjects();</span>
+                            </div>
+
+                            <div class="code-line">
+                                <span class="line-number">10</span>
+                                <span class="indent-two">solveProblems();</span>
+                            </div>
+
+                            <div class="code-line">
+                                <span class="line-number">11</span>
+                                <span class="indent">}</span>
+                            </div>
+
+                            <div class="code-line">
+                                <span class="line-number">12</span>
+                                <span>}</span>
+                            </div>
+                        </div>
+
+                        <div class="code-card-footer">
+                            <span><span class="status-indicator"></span> Always learning</span>
+                            <span>JAVA <span class="footer-symbol">✳</span></span>
+                        </div>
+                    </div>
+
+                    <div class="floating-chip chip-java">
+                        <span class="chip-icon java-icon">J</span>
+                        <span><strong>Java</strong><small>Core programming</small></span>
+                    </div>
+
+                    <div class="floating-chip chip-code">
+                        <span class="chip-icon">&lt;/&gt;</span>
+                        <span><strong>Build. Learn.</strong><small>Repeat.</small></span>
+                    </div>
                 </div>
+
             </div>
-            <div class="project-box">
-                <img src="project3.png">
-                <h3>To-do-list</h3>
-                <p>JavaScript</p>
-                <div class="buttons">
-                    <a href="#">Live</a>
-                    <a href="https://github.com/amisharajput21/To-Do-List-app.git">Code</a>
+
+            <a class="scroll-indicator" href="#about">
+                <span class="scroll-line"></span>
+                Scroll to explore
+            </a>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section section-border" id="about">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="eyebrow">GET TO KNOW ME</p>
+                    <h2>About <span class="gradient-text">Me</span></h2>
+                    <p>A little about my journey into technology.</p>
                 </div>
+
+                <div class="about-grid">
+                    <div class="about-main glass-card reveal">
+                        <span class="card-index">01 / INTRODUCTION</span>
+
+                        <h3>Learning today.<br><span class="gradient-text">Building for tomorrow.</span></h3>
+
+                        <p>
+                            I'm a Computer Science Engineering student at GLA
+                            University with an interest in Java programming and
+                            software development.
+                        </p>
+
+                        <p>
+                            I am working on my programming fundamentals, database
+                            concepts, and web development skills by practising
+                            coding problems and developing projects.
+                        </p>
+
+                        <p>
+                            My goal is to grow into a software developer who can
+                            turn ideas into useful, reliable applications.
+                        </p>
+                    </div>
+
+                    <div class="about-side reveal">
+                        <div class="info-card glass-card">
+                            <span class="info-icon">⌘</span>
+                            <div>
+                                <h4>Current Focus</h4>
+                                <p>Java · Problem Solving · Web Development</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card glass-card">
+                            <span class="info-icon">⌖</span>
+                            <div>
+                                <h4>Education</h4>
+                                <p>B.Tech in Computer Science Engineering</p>
+                                <small>GLA University</small>
+                            </div>
+                        </div>
+
+                        <div class="info-card glass-card">
+                            <span class="info-icon">↗</span>
+                            <div>
+                                <h4>Career Goal</h4>
+                                <p>Software / Java Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="section section-border" id="skills">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="eyebrow">WHAT I WORK WITH</p>
+                    <h2>Technical <span class="gradient-text">Skills</span></h2>
+                    <p>Technologies and concepts I have been learning and practising.</p>
+                </div>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card glass-card reveal">
+                        <div class="skill-card-top">
+                            <span class="skill-icon java-icon">J</span>
+                            <span class="skill-number">01</span>
+                        </div>
+                        <h3>Programming</h3>
+                        <p>Writing code and strengthening programming fundamentals.</p>
+                        <div class="skill-tags">
+                            <span>Java</span>
+                            <span>C#</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card glass-card reveal">
+                        <div class="skill-card-top">
+                            <span class="skill-icon">&lt;/&gt;</span>
+                            <span class="skill-number">02</span>
+                        </div>
+                        <h3>Frontend</h3>
+                        <p>Building responsive and interactive user interfaces.</p>
+                        <div class="skill-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card glass-card reveal">
+                        <div class="skill-card-top">
+                            <span class="skill-icon">⌘</span>
+                            <span class="skill-number">03</span>
+                        </div>
+                        <h3>Backend</h3>
+                        <p>Learning server-side development and application logic.</p>
+                        <div class="skill-tags">
+                            <span>Spring Boot</span>
+                            <span>ASP.NET Core</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card glass-card reveal">
+                        <div class="skill-card-top">
+                            <span class="skill-icon">▤</span>
+                            <span class="skill-number">04</span>
+                        </div>
+                        <h3>Database & Tools</h3>
+                        <p>Working with relational databases and development tools.</p>
+                        <div class="skill-tags">
+                            <span>MySQL</span>
+                            <span>Git</span>
+                            <span>GitHub</span>
+                        </div>
+                    </article>
+
+                </div>
+
+                <p class="skills-note reveal">
+                    Skills reflect my learning and project experience; proficiency varies by technology.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section section-border" id="projects">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="eyebrow">SELECTED WORK</p>
+                    <h2>Featured <span class="gradient-text">Projects</span></h2>
+                    <p>Applications I have worked on while developing my skills.</p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <article class="project-card glass-card reveal">
+                        <div class="project-preview prep-preview">
+                            <div class="preview-topbar">
+                                <span class="preview-brand"><span>✳</span> PrepMate</span>
+                                <span class="preview-label">PROJECT / 01</span>
+                            </div>
+
+                            <div class="preview-content">
+                                <p class="preview-kicker">YOUR PREPARATION SPACE</p>
+                                <h3>Prepare with<br><span>purpose.</span></h3>
+                                <div class="preview-lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="preview-button">Start preparing ↗</div>
+                            </div>
+                            <div class="preview-decoration"></div>
+                        </div>
+
+                        <div class="project-details">
+                            <div class="project-title-row">
+                                <h3>PrepMate</h3>
+                                <span class="project-type">Web Application</span>
+                            </div>
+
+                            <p>
+                                A placement preparation platform designed to bring
+                                interview preparation and learning resources into
+                                one organised experience.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Java</span>
+                                <span>Spring Boot</span>
+                                <span>MySQL</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a
+                                    href="https://github.com/amisharajput21"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >GitHub Profile <span>↗</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card glass-card reveal">
+                        <div class="project-preview shop-preview">
+                            <div class="preview-topbar">
+                                <span class="preview-brand"><span>◈</span> E-Commerce</span>
+                                <span class="preview-label">PROJECT / 02</span>
+                            </div>
+
+                            <div class="shop-layout">
+                                <div class="shop-sidebar">
+                                    <span class="shop-sidebar-line active"></span>
+                                    <span class="shop-sidebar-line"></span>
+                                    <span class="shop-sidebar-line"></span>
+                                    <span class="shop-sidebar-line"></span>
+                                </div>
+
+                                <div class="shop-products">
+                                    <div class="shop-heading-line"></div>
+                                    <div class="shop-heading-short"></div>
+
+                                    <div class="shop-product-grid">
+                                        <div class="shop-product">
+                                            <div class="product-art art-one">◈</div>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="shop-product">
+                                            <div class="product-art art-two">◇</div>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="shop-product">
+                                            <div class="product-art art-three">⬡</div>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-details">
+                            <div class="project-title-row">
+                                <h3>E-Commerce Website</h3>
+                                <span class="project-type">Web Application</span>
+                            </div>
+
+                            <p>
+                                An e-commerce web application built to practise
+                                web development concepts and understand the
+                                structure of an online shopping experience.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>C#</span>
+                                <span>ASP.NET Core</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a
+                                    href="https://github.com/amisharajput21"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >GitHub Profile <span>↗</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <p class="projects-note reveal">
+                    Project links currently lead to my GitHub profile. Replace them with
+                    individual repository URLs when those repositories are public.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- CODING PROFILES -->
+        <section class="section section-border" id="profiles">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="eyebrow">FIND ME ONLINE</p>
+                    <h2>Coding & <span class="gradient-text">Profiles</span></h2>
+                    <p>Explore my coding practice and professional profile.</p>
+                </div>
+
+                <div class="profiles-grid">
+
+                    <a
+                        class="profile-card glass-card reveal"
+                        href="https://github.com/amisharajput21"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <span class="profile-icon">GH</span>
+                        <span class="profile-copy">
+                            <strong>GitHub</strong>
+                            <small>Projects and code</small>
+                        </span>
+                        <span class="profile-arrow">↗</span>
+                    </a>
+
+                    <a
+                        class="profile-card glass-card reveal"
+                        href="https://www.linkedin.com/in/amisha-rajput-b52b20301/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <span class="profile-icon linkedin-icon">in</span>
+                        <span class="profile-copy">
+                            <strong>LinkedIn</strong>
+                            <small>Professional profile</small>
+                        </span>
+                        <span class="profile-arrow">↗</span>
+                    </a>
+
+                    <a
+                        class="profile-card glass-card reveal"
+                        href="https://leetcode.com/u/Amisha_Rajput/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <span class="profile-icon leetcode-icon">{ }</span>
+                        <span class="profile-copy">
+                            <strong>LeetCode</strong>
+                            <small>Problem-solving profile</small>
+                        </span>
+                        <span class="profile-arrow">↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section section-border" id="contact">
+            <div class="container">
+
+                <div class="contact-panel reveal">
+                    <div class="contact-decoration contact-decoration-one"></div>
+                    <div class="contact-decoration contact-decoration-two"></div>
+
+                    <div class="contact-content">
+                        <p class="eyebrow">LET'S CONNECT</p>
+
+                        <h2>
+                            Have an opportunity<br>
+                            <span class="gradient-text">or an idea?</span>
+                        </h2>
+
+                        <p class="contact-description">
+                            I'm interested in software development opportunities,
+                            learning from other developers, and building useful
+                            applications. Feel free to reach out.
+                        </p>
+
+                        <a
+                            class="button button-primary"
+                            href="mailto:amisha.rajput@gla.ac.in"
+                        >
+                            Send Me an Email <span>↗</span>
+                        </a>
+
+                        <p class="contact-email-note">
+                            Replace the email address above if your preferred contact email differs.
+                        </p>
+                    </div>
+
+                    <div class="contact-links">
+
+                        <a
+                            href="https://github.com/amisharajput21"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-link"
+                        >
+                            <span class="contact-link-icon">GH</span>
+                            <span>
+                                <small>CODE REPOSITORIES</small>
+                                <strong>GitHub Profile</strong>
+                            </span>
+                            <span class="contact-arrow">↗</span>
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/amisha-rajput-b52b20301/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-link"
+                        >
+                            <span class="contact-link-icon">in</span>
+                            <span>
+                                <small>PROFESSIONAL NETWORK</small>
+                                <strong>LinkedIn Profile</strong>
+                            </span>
+                            <span class="contact-arrow">↗</span>
+                        </a>
+
+                        <a
+                            href="https://leetcode.com/u/Amisha_Rajput/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-link"
+                        >
+                            <span class="contact-link-icon">{ }</span>
+                            <span>
+                                <small>CODING PROFILE</small>
+                                <strong>LeetCode — Amisha_Rajput</strong>
+                            </span>
+                            <span class="contact-arrow">↗</span>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a href="#home" class="brand footer-brand">
+                <span class="brand-mark">A<span>.</span></span>
+                <span class="brand-name">amisha<span>rajput</span></span>
+            </a>
+
+            <p>Designed & built with curiosity.</p>
+
+            <p class="copyright">
+                © <span id="current-year"></span> Amisha Rajput
+            </p>
         </div>
-    </section>
-    <section class="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-container">
-            <input type="text" placeholder="Your name">
-            <input type="text" placeholder="Your email">
-            <textarea placeholder="Your Message"></textarea>
-            <button>Send Message</button>
-        </div>
-    </section>
+    </footer>
+
+    <button
+        id="back-to-top"
+        class="back-to-top"
+        type="button"
+        aria-label="Back to top"
+    >↑</button>
+
+    <script src="script.js"></script>
 </body>
-</html> 
+</html>
